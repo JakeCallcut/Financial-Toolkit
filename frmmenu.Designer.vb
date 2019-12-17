@@ -29,9 +29,10 @@ Partial Class frmmenu
         'btninterest
         '
         Me.btninterest.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btninterest.Location = New System.Drawing.Point(82, 299)
+        Me.btninterest.Location = New System.Drawing.Point(50, 188)
+        Me.btninterest.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btninterest.Name = "btninterest"
-        Me.btninterest.Size = New System.Drawing.Size(171, 91)
+        Me.btninterest.Size = New System.Drawing.Size(125, 65)
         Me.btninterest.TabIndex = 0
         Me.btninterest.Text = "Interest Calculator"
         Me.btninterest.UseVisualStyleBackColor = True
@@ -39,20 +40,22 @@ Partial Class frmmenu
         'btnquit
         '
         Me.btnquit.Font = New System.Drawing.Font("Georgia", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnquit.Location = New System.Drawing.Point(65, 396)
+        Me.btnquit.Location = New System.Drawing.Point(39, 257)
+        Me.btnquit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnquit.Name = "btnquit"
-        Me.btnquit.Size = New System.Drawing.Size(198, 86)
+        Me.btnquit.Size = New System.Drawing.Size(146, 56)
         Me.btnquit.TabIndex = 1
         Me.btnquit.Text = "Quit"
         Me.btnquit.UseVisualStyleBackColor = True
         '
         'frmmenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(329, 494)
+        Me.ClientSize = New System.Drawing.Size(219, 321)
         Me.Controls.Add(Me.btnquit)
         Me.Controls.Add(Me.btninterest)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmmenu"
         Me.Text = "Financial Toolkit"
         Me.ResumeLayout(False)
