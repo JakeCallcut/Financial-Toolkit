@@ -25,7 +25,7 @@ Partial Class interestcalculator
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(interestcalculator))
         Me.rdbtncompound = New System.Windows.Forms.RadioButton()
         Me.rdbtnsimple = New System.Windows.Forms.RadioButton()
-        Me.grpbx = New System.Windows.Forms.GroupBox()
+        Me.grpbxinterest = New System.Windows.Forms.GroupBox()
         Me.btncalc = New System.Windows.Forms.Button()
         Me.txtamount = New System.Windows.Forms.TextBox()
         Me.txtyears = New System.Windows.Forms.TextBox()
@@ -35,7 +35,7 @@ Partial Class interestcalculator
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblresult = New System.Windows.Forms.Label()
-        Me.grpbx.SuspendLayout()
+        Me.grpbxinterest.SuspendLayout()
         Me.SuspendLayout()
         '
         'rdbtncompound
@@ -60,16 +60,16 @@ Partial Class interestcalculator
         Me.rdbtnsimple.Text = "Simple"
         Me.rdbtnsimple.UseVisualStyleBackColor = True
         '
-        'grpbx
+        'grpbxinterest
         '
-        Me.grpbx.Controls.Add(Me.rdbtnsimple)
-        Me.grpbx.Controls.Add(Me.rdbtncompound)
-        Me.grpbx.Location = New System.Drawing.Point(12, 12)
-        Me.grpbx.Name = "grpbx"
-        Me.grpbx.Size = New System.Drawing.Size(168, 109)
-        Me.grpbx.TabIndex = 2
-        Me.grpbx.TabStop = False
-        Me.grpbx.Text = "Interest Type"
+        Me.grpbxinterest.Controls.Add(Me.rdbtnsimple)
+        Me.grpbxinterest.Controls.Add(Me.rdbtncompound)
+        Me.grpbxinterest.Location = New System.Drawing.Point(12, 12)
+        Me.grpbxinterest.Name = "grpbxinterest"
+        Me.grpbxinterest.Size = New System.Drawing.Size(168, 109)
+        Me.grpbxinterest.TabIndex = 2
+        Me.grpbxinterest.TabStop = False
+        Me.grpbxinterest.Text = "Interest Type"
         '
         'btncalc
         '
@@ -168,13 +168,13 @@ Partial Class interestcalculator
         Me.Controls.Add(Me.txtyears)
         Me.Controls.Add(Me.txtamount)
         Me.Controls.Add(Me.btncalc)
-        Me.Controls.Add(Me.grpbx)
+        Me.Controls.Add(Me.grpbxinterest)
         Me.ForeColor = System.Drawing.Color.Black
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "interestcalculator"
         Me.Text = "interestcalculator"
-        Me.grpbx.ResumeLayout(False)
-        Me.grpbx.PerformLayout()
+        Me.grpbxinterest.ResumeLayout(False)
+        Me.grpbxinterest.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -182,7 +182,7 @@ Partial Class interestcalculator
 
     Friend WithEvents rdbtncompound As RadioButton
     Friend WithEvents rdbtnsimple As RadioButton
-    Friend WithEvents grpbx As GroupBox
+    Friend WithEvents grpbxinterest As GroupBox
     Friend WithEvents btncalc As Button
     Friend WithEvents txtamount As TextBox
     Friend WithEvents txtyears As TextBox

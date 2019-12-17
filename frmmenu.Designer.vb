@@ -27,6 +27,7 @@ Partial Class frmmenu
         Me.btnquit = New System.Windows.Forms.Button()
         Me.btnmortgage = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btncurr = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,11 +72,22 @@ Partial Class frmmenu
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
+        'btncurr
+        '
+        Me.btncurr.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btncurr.Location = New System.Drawing.Point(124, 159)
+        Me.btncurr.Name = "btncurr"
+        Me.btncurr.Size = New System.Drawing.Size(188, 101)
+        Me.btncurr.TabIndex = 4
+        Me.btncurr.Text = "Currency Converter"
+        Me.btncurr.UseVisualStyleBackColor = True
+        '
         'frmmenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(420, 577)
+        Me.Controls.Add(Me.btncurr)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnmortgage)
         Me.Controls.Add(Me.btnquit)
@@ -92,4 +104,5 @@ Partial Class frmmenu
     Friend WithEvents btnquit As Button
     Friend WithEvents btnmortgage As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btncurr As Button
 End Class

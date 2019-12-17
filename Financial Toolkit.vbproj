@@ -53,6 +53,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="currencyconverter.Designer.vb">
+      <DependentUpon>currencyconverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="currencyconverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmmenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +91,12 @@
       <DependentUpon>interestcalculator.vb</DependentUpon>
     </Compile>
     <Compile Include="interestcalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mortagecalculator.Designer.vb">
+      <DependentUpon>mortagecalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mortagecalculator.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -103,11 +116,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="currencyconverter.resx">
+      <DependentUpon>currencyconverter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmmenu.resx">
       <DependentUpon>frmmenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="interestcalculator.resx">
       <DependentUpon>interestcalculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mortagecalculator.resx">
+      <DependentUpon>mortagecalculator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

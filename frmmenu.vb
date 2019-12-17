@@ -11,4 +11,18 @@
         interestcalculator.Show()
 
     End Sub
+
+    Private Sub btnmortgage_Click(sender As Object, e As EventArgs) Handles btnmortgage.Click
+
+        Me.Hide()
+        mortagecalculator.Show()
+
+    End Sub
+
+    Private Sub btncurr_Click(sender As Object, e As EventArgs) Handles btncurr.Click
+
+        Me.Hide()
+        currencyconverter.Show()
+
+    End Sub
 End Class

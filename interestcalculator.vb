@@ -13,7 +13,6 @@
         Dim rate As Double
         Dim result As Double
         Dim decimalperc As Double
-        Dim profit As Double
 
         years = txtyears.Text
         amount = txtamount.Text
