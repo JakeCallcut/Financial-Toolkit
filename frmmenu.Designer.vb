@@ -22,8 +22,12 @@ Partial Class frmmenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmmenu))
         Me.btninterest = New System.Windows.Forms.Button()
         Me.btnquit = New System.Windows.Forms.Button()
+        Me.btnmortgage = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btninterest
@@ -46,19 +50,46 @@ Partial Class frmmenu
         Me.btnquit.Text = "Quit"
         Me.btnquit.UseVisualStyleBackColor = True
         '
+        'btnmortgage
+        '
+        Me.btnmortgage.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnmortgage.Location = New System.Drawing.Point(124, 266)
+        Me.btnmortgage.Name = "btnmortgage"
+        Me.btnmortgage.Size = New System.Drawing.Size(188, 101)
+        Me.btnmortgage.TabIndex = 2
+        Me.btnmortgage.Text = "Mortgage Calculator"
+        Me.btnmortgage.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(50, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(314, 74)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'frmmenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(429, 577)
+        Me.ClientSize = New System.Drawing.Size(420, 577)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnmortgage)
         Me.Controls.Add(Me.btnquit)
         Me.Controls.Add(Me.btninterest)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmmenu"
         Me.Text = "Financial Toolkit"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents btninterest As Button
     Friend WithEvents btnquit As Button
+    Friend WithEvents btnmortgage As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

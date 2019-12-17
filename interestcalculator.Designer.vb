@@ -73,13 +73,14 @@ Partial Class interestcalculator
         '
         'btncalc
         '
+        Me.btncalc.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btncalc.Font = New System.Drawing.Font("Georgia", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btncalc.Location = New System.Drawing.Point(288, 345)
         Me.btncalc.Name = "btncalc"
         Me.btncalc.Size = New System.Drawing.Size(231, 93)
         Me.btncalc.TabIndex = 3
         Me.btncalc.Text = "Calculate"
-        Me.btncalc.UseVisualStyleBackColor = True
+        Me.btncalc.UseVisualStyleBackColor = False
         '
         'txtamount
         '
