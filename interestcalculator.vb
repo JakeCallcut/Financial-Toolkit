@@ -1,5 +1,4 @@
 ﻿Public Class interestcalculator
-    Private lblprofit As Object
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
@@ -15,7 +14,6 @@
         Dim result As Double
         Dim decimalperc As Double
         Dim profit As Double
-
 
         years = txtyears.Text
         amount = txtamount.Text
@@ -46,9 +44,6 @@
                         lblresult.Text = "Return: " & result
 
                     End If
-
-                    profit = amount - result
-                    lblprofit.text = "Profit: " & profit
 
                 Else
                     MessageBox.Show("Please enter a number in the rate field")
