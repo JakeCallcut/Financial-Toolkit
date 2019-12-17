@@ -22,6 +22,7 @@ Partial Class interestcalculator
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim lblprofit As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(interestcalculator))
         Me.rdbtncompound = New System.Windows.Forms.RadioButton()
         Me.rdbtnsimple = New System.Windows.Forms.RadioButton()
@@ -35,6 +36,7 @@ Partial Class interestcalculator
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblresult = New System.Windows.Forms.Label()
+        lblprofit = New System.Windows.Forms.Label()
         Me.grpbx.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -146,11 +148,21 @@ Partial Class interestcalculator
         '
         Me.lblresult.AutoSize = True
         Me.lblresult.Font = New System.Drawing.Font("Georgia", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblresult.Location = New System.Drawing.Point(161, 229)
+        Me.lblresult.Location = New System.Drawing.Point(20, 145)
         Me.lblresult.Name = "lblresult"
         Me.lblresult.Size = New System.Drawing.Size(183, 51)
         Me.lblresult.TabIndex = 11
         Me.lblresult.Text = "Return: "
+        '
+        'lblprofit
+        '
+        lblprofit.AutoSize = True
+        lblprofit.Font = New System.Drawing.Font("Georgia", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        lblprofit.Location = New System.Drawing.Point(21, 208)
+        lblprofit.Name = "lblprofit"
+        lblprofit.Size = New System.Drawing.Size(134, 46)
+        lblprofit.TabIndex = 12
+        lblprofit.Text = "Profit:"
         '
         'interestcalculator
         '
@@ -158,6 +170,7 @@ Partial Class interestcalculator
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(lblprofit)
         Me.Controls.Add(Me.lblresult)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
