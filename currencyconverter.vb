@@ -1,22 +1,15 @@
 ﻿Public Class currencyconverter
 
-    Dim arrowright As Boolean
+    Dim arrowright As Boolean = True
 
     Private Sub rdbtnleft_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnswap_Click(sender As Object, e As EventArgs) Handles btnswap.Click
+    Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
 
-        If lbltofrom.Text = ">" Then
-            arrowright = False
-            lbltofrom.Text = "<"
-        End If
-
-        If lbltofrom.Text = "<" Then
-            arrowright = True
-            lbltofrom.Text = ">"
-        End If
+        Me.Close()
+        frmmenu.Show()
 
     End Sub
 End Class

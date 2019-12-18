@@ -1,10 +1,13 @@
 # Financial-Toolkit
  A collection of resources to help with finance
 
-#filepath for executable
+## Filepath for executable
 bin>debug>Financial Toolkit.exe
 
-#features
+## Features
 - interest calculator (simple and compund)
 - mortgage calculator
 - currncy converter
+
+## Contributors 
+- Jake Callcut
