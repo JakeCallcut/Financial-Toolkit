@@ -13,6 +13,7 @@
         Dim rate As Double
         Dim result As Double
         Dim decimalperc As Double
+        Dim profit As Double
 
         years = txtyears.Text
         amount = txtamount.Text
@@ -43,6 +44,9 @@
                         lblresult.Text = "Return: " & result
 
                     End If
+
+                    profit = result - amount
+                    lblprof.Text = "Profit: " & profit
 
                 Else
                     MessageBox.Show("Please enter a number in the rate field")

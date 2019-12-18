@@ -35,7 +35,10 @@ Partial Class interestcalculator
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblresult = New System.Windows.Forms.Label()
+        Me.lblprof = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.grpbxinterest.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'rdbtncompound
@@ -147,11 +150,32 @@ Partial Class interestcalculator
         '
         Me.lblresult.AutoSize = True
         Me.lblresult.Font = New System.Drawing.Font("Georgia", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblresult.Location = New System.Drawing.Point(136, 229)
+        Me.lblresult.Location = New System.Drawing.Point(6, 22)
         Me.lblresult.Name = "lblresult"
         Me.lblresult.Size = New System.Drawing.Size(183, 51)
         Me.lblresult.TabIndex = 11
         Me.lblresult.Text = "Return: "
+        '
+        'lblprof
+        '
+        Me.lblprof.AutoSize = True
+        Me.lblprof.Font = New System.Drawing.Font("Georgia", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblprof.Location = New System.Drawing.Point(6, 83)
+        Me.lblprof.Name = "lblprof"
+        Me.lblprof.Size = New System.Drawing.Size(147, 51)
+        Me.lblprof.TabIndex = 12
+        Me.lblprof.Text = "Profit:"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.lblprof)
+        Me.GroupBox1.Controls.Add(Me.lblresult)
+        Me.GroupBox1.Location = New System.Drawing.Point(115, 189)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(537, 137)
+        Me.GroupBox1.TabIndex = 13
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Results"
         '
         'interestcalculator
         '
@@ -159,7 +183,7 @@ Partial Class interestcalculator
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lblresult)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -175,6 +199,8 @@ Partial Class interestcalculator
         Me.Text = "interestcalculator"
         Me.grpbxinterest.ResumeLayout(False)
         Me.grpbxinterest.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -192,4 +218,6 @@ Partial Class interestcalculator
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents lblresult As Label
+    Friend WithEvents lblprof As Label
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

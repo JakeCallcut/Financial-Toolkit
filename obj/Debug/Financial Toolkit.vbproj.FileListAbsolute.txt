@@ -12,3 +12,4 @@ E:\Programming\Visual Basic\Financial Toolkit\obj\Debug\Financial Toolkit.pdb
 E:\Programming\Visual Basic\Financial Toolkit\obj\Debug\Financial_Toolkit.interestcalculator.resources
 E:\Programming\Visual Basic\Financial Toolkit\obj\Debug\Financial_Toolkit.mortagecalculator.resources
 E:\Programming\Visual Basic\Financial Toolkit\obj\Debug\Financial_Toolkit.currencyconverter.resources
+E:\Programming\Visual Basic\Financial Toolkit\obj\Debug\Financial_Toolkit.budget_manager.resources

@@ -28,13 +28,14 @@ Partial Class frmmenu
         Me.btnmortgage = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btncurr = New System.Windows.Forms.Button()
+        Me.btnbudgeting = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btninterest
         '
         Me.btninterest.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btninterest.Location = New System.Drawing.Point(124, 373)
+        Me.btninterest.Location = New System.Drawing.Point(124, 491)
         Me.btninterest.Name = "btninterest"
         Me.btninterest.Size = New System.Drawing.Size(188, 100)
         Me.btninterest.TabIndex = 0
@@ -44,7 +45,7 @@ Partial Class frmmenu
         'btnquit
         '
         Me.btnquit.Font = New System.Drawing.Font("Georgia", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnquit.Location = New System.Drawing.Point(107, 479)
+        Me.btnquit.Location = New System.Drawing.Point(109, 597)
         Me.btnquit.Name = "btnquit"
         Me.btnquit.Size = New System.Drawing.Size(219, 86)
         Me.btnquit.TabIndex = 1
@@ -54,7 +55,7 @@ Partial Class frmmenu
         'btnmortgage
         '
         Me.btnmortgage.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnmortgage.Location = New System.Drawing.Point(124, 266)
+        Me.btnmortgage.Location = New System.Drawing.Point(124, 384)
         Me.btnmortgage.Name = "btnmortgage"
         Me.btnmortgage.Size = New System.Drawing.Size(188, 101)
         Me.btnmortgage.TabIndex = 2
@@ -75,18 +76,29 @@ Partial Class frmmenu
         'btncurr
         '
         Me.btncurr.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncurr.Location = New System.Drawing.Point(124, 159)
+        Me.btncurr.Location = New System.Drawing.Point(124, 277)
         Me.btncurr.Name = "btncurr"
         Me.btncurr.Size = New System.Drawing.Size(188, 101)
         Me.btncurr.TabIndex = 4
         Me.btncurr.Text = "Currency Converter"
         Me.btncurr.UseVisualStyleBackColor = True
         '
+        'btnbudgeting
+        '
+        Me.btnbudgeting.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnbudgeting.Location = New System.Drawing.Point(124, 170)
+        Me.btnbudgeting.Name = "btnbudgeting"
+        Me.btnbudgeting.Size = New System.Drawing.Size(188, 101)
+        Me.btnbudgeting.TabIndex = 5
+        Me.btnbudgeting.Text = "Budget Manager"
+        Me.btnbudgeting.UseVisualStyleBackColor = True
+        '
         'frmmenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(420, 577)
+        Me.ClientSize = New System.Drawing.Size(420, 695)
+        Me.Controls.Add(Me.btnbudgeting)
         Me.Controls.Add(Me.btncurr)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnmortgage)
@@ -105,4 +117,5 @@ Partial Class frmmenu
     Friend WithEvents btnmortgage As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btncurr As Button
+    Friend WithEvents btnbudgeting As Button
 End Class

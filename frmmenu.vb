@@ -25,4 +25,11 @@
         currencyconverter.Show()
 
     End Sub
+
+    Private Sub btnbudgeting_Click(sender As Object, e As EventArgs) Handles btnbudgeting.Click
+
+        Me.Hide()
+        budget_manager.Show()
+
+    End Sub
 End Class
