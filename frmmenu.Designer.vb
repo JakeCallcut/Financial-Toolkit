@@ -66,7 +66,7 @@ Partial Class frmmenu
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(63, 48)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(314, 74)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -97,7 +97,7 @@ Partial Class frmmenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(420, 695)
+        Me.ClientSize = New System.Drawing.Size(427, 695)
         Me.Controls.Add(Me.btnbudgeting)
         Me.Controls.Add(Me.btncurr)
         Me.Controls.Add(Me.PictureBox1)

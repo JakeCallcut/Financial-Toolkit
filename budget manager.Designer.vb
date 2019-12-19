@@ -27,6 +27,9 @@ Partial Class budget_manager
         Me.btnadd = New System.Windows.Forms.Button()
         Me.lstbxbudget = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblbudget = New System.Windows.Forms.Label()
+        Me.txtbudget = New System.Windows.Forms.TextBox()
+        Me.lblremaining = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnback
@@ -68,11 +71,42 @@ Partial Class budget_manager
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Budget Manager"
         '
+        'lblbudget
+        '
+        Me.lblbudget.AutoSize = True
+        Me.lblbudget.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblbudget.Location = New System.Drawing.Point(24, 120)
+        Me.lblbudget.Name = "lblbudget"
+        Me.lblbudget.Size = New System.Drawing.Size(89, 29)
+        Me.lblbudget.TabIndex = 4
+        Me.lblbudget.Text = "Budget"
+        Me.lblbudget.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'txtbudget
+        '
+        Me.txtbudget.Location = New System.Drawing.Point(119, 123)
+        Me.txtbudget.Name = "txtbudget"
+        Me.txtbudget.Size = New System.Drawing.Size(278, 26)
+        Me.txtbudget.TabIndex = 5
+        '
+        'lblremaining
+        '
+        Me.lblremaining.AutoSize = True
+        Me.lblremaining.Font = New System.Drawing.Font("Georgia", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblremaining.Location = New System.Drawing.Point(25, 236)
+        Me.lblremaining.Name = "lblremaining"
+        Me.lblremaining.Size = New System.Drawing.Size(192, 41)
+        Me.lblremaining.TabIndex = 6
+        Me.lblremaining.Text = "Remaining"
+        '
         'budget_manager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblremaining)
+        Me.Controls.Add(Me.txtbudget)
+        Me.Controls.Add(Me.lblbudget)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lstbxbudget)
         Me.Controls.Add(Me.btnadd)
@@ -89,4 +123,7 @@ Partial Class budget_manager
     Friend WithEvents btnadd As Button
     Friend WithEvents lstbxbudget As ListBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents lblbudget As Label
+    Friend WithEvents txtbudget As TextBox
+    Friend WithEvents lblremaining As Label
 End Class
