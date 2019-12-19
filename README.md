@@ -7,7 +7,8 @@ bin>debug>Financial Toolkit.exe
 ## Features
 - interest calculator (simple and compund)
 - mortgage calculator
-- currncy converter
+- currency converter
+- Budgeting management
 
 ## Contributors 
 - Jake Callcut
