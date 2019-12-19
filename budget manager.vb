@@ -4,7 +4,7 @@
         Dim item As String = ""
         Dim price As Double
         Dim budget As Double
-        Dim totalexpense As Double = 0
+        Dim totalexpense As Double
         Dim remaining As Double
 
         budget = txtbudget.Text
@@ -35,6 +35,12 @@
 
         Me.Close()
         frmmenu.Show()
+
+    End Sub
+
+    Private Sub btnclr_Click(sender As Object, e As EventArgs) Handles btnclr.Click
+
+        lstbxbudget.Items.Clear()
 
     End Sub
 End Class

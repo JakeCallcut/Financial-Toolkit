@@ -30,6 +30,9 @@ Partial Class budget_manager
         Me.lblbudget = New System.Windows.Forms.Label()
         Me.txtbudget = New System.Windows.Forms.TextBox()
         Me.lblremaining = New System.Windows.Forms.Label()
+        Me.lbltotal = New System.Windows.Forms.Label()
+        Me.btnclr = New System.Windows.Forms.Button()
+        Me.btnsrt = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnback
@@ -84,7 +87,7 @@ Partial Class budget_manager
         '
         'txtbudget
         '
-        Me.txtbudget.Location = New System.Drawing.Point(119, 123)
+        Me.txtbudget.Location = New System.Drawing.Point(119, 124)
         Me.txtbudget.Name = "txtbudget"
         Me.txtbudget.Size = New System.Drawing.Size(278, 26)
         Me.txtbudget.TabIndex = 5
@@ -92,18 +95,51 @@ Partial Class budget_manager
         'lblremaining
         '
         Me.lblremaining.AutoSize = True
-        Me.lblremaining.Font = New System.Drawing.Font("Georgia", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblremaining.Location = New System.Drawing.Point(25, 236)
+        Me.lblremaining.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblremaining.Location = New System.Drawing.Point(27, 260)
         Me.lblremaining.Name = "lblremaining"
-        Me.lblremaining.Size = New System.Drawing.Size(192, 41)
+        Me.lblremaining.Size = New System.Drawing.Size(161, 32)
         Me.lblremaining.TabIndex = 6
-        Me.lblremaining.Text = "Remaining"
+        Me.lblremaining.Text = "Remaining:"
+        '
+        'lbltotal
+        '
+        Me.lbltotal.AutoSize = True
+        Me.lbltotal.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotal.Location = New System.Drawing.Point(27, 215)
+        Me.lbltotal.Name = "lbltotal"
+        Me.lbltotal.Size = New System.Drawing.Size(212, 32)
+        Me.lbltotal.TabIndex = 7
+        Me.lbltotal.Text = "Total Expenses:"
+        '
+        'btnclr
+        '
+        Me.btnclr.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnclr.Location = New System.Drawing.Point(804, 359)
+        Me.btnclr.Name = "btnclr"
+        Me.btnclr.Size = New System.Drawing.Size(103, 65)
+        Me.btnclr.TabIndex = 8
+        Me.btnclr.Text = "Clear"
+        Me.btnclr.UseVisualStyleBackColor = True
+        '
+        'btnsrt
+        '
+        Me.btnsrt.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsrt.Location = New System.Drawing.Point(804, 288)
+        Me.btnsrt.Name = "btnsrt"
+        Me.btnsrt.Size = New System.Drawing.Size(103, 65)
+        Me.btnsrt.TabIndex = 9
+        Me.btnsrt.Text = "Sort"
+        Me.btnsrt.UseVisualStyleBackColor = True
         '
         'budget_manager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(931, 446)
+        Me.Controls.Add(Me.btnsrt)
+        Me.Controls.Add(Me.btnclr)
+        Me.Controls.Add(Me.lbltotal)
         Me.Controls.Add(Me.lblremaining)
         Me.Controls.Add(Me.txtbudget)
         Me.Controls.Add(Me.lblbudget)
@@ -126,4 +162,7 @@ Partial Class budget_manager
     Friend WithEvents lblbudget As Label
     Friend WithEvents txtbudget As TextBox
     Friend WithEvents lblremaining As Label
+    Friend WithEvents lbltotal As Label
+    Friend WithEvents btnclr As Button
+    Friend WithEvents btnsrt As Button
 End Class

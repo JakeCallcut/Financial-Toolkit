@@ -26,10 +26,11 @@ Partial Class frmmenu
         Me.btninterest = New System.Windows.Forms.Button()
         Me.btnquit = New System.Windows.Forms.Button()
         Me.btnmortgage = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btncurr = New System.Windows.Forms.Button()
         Me.btnbudgeting = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmbcurr = New System.Windows.Forms.ComboBox()
+        Me.lblcurr = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btninterest
@@ -62,17 +63,6 @@ Partial Class frmmenu
         Me.btnmortgage.Text = "Mortgage Calculator"
         Me.btnmortgage.UseVisualStyleBackColor = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(63, 48)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(314, 74)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'btncurr
         '
         Me.btncurr.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -93,29 +83,65 @@ Partial Class frmmenu
         Me.btnbudgeting.Text = "Budget Manager"
         Me.btnbudgeting.UseVisualStyleBackColor = True
         '
+        'cmbcurr
+        '
+        Me.cmbcurr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbcurr.FormattingEnabled = True
+        Me.cmbcurr.Items.AddRange(New Object() {"GBP", "USD", "EUR", "JPY", "KRW", "AUD", "CAD", "IDR", "CHF"})
+        Me.cmbcurr.Location = New System.Drawing.Point(229, 117)
+        Me.cmbcurr.Name = "cmbcurr"
+        Me.cmbcurr.Size = New System.Drawing.Size(99, 28)
+        Me.cmbcurr.TabIndex = 6
+        '
+        'lblcurr
+        '
+        Me.lblcurr.AutoSize = True
+        Me.lblcurr.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcurr.Location = New System.Drawing.Point(84, 110)
+        Me.lblcurr.Name = "lblcurr"
+        Me.lblcurr.Size = New System.Drawing.Size(139, 32)
+        Me.lblcurr.TabIndex = 7
+        Me.lblcurr.Text = "Currency:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.PowderBlue
+        Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 22.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.SteelBlue
+        Me.Label1.Location = New System.Drawing.Point(64, 36)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(300, 60)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Finance Toolkit"
+        '
         'frmmenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(427, 695)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblcurr)
+        Me.Controls.Add(Me.cmbcurr)
         Me.Controls.Add(Me.btnbudgeting)
         Me.Controls.Add(Me.btncurr)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnmortgage)
         Me.Controls.Add(Me.btnquit)
         Me.Controls.Add(Me.btninterest)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmmenu"
         Me.Text = "Financial Toolkit"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btninterest As Button
     Friend WithEvents btnquit As Button
     Friend WithEvents btnmortgage As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btncurr As Button
     Friend WithEvents btnbudgeting As Button
+    Friend WithEvents cmbcurr As ComboBox
+    Friend WithEvents lblcurr As Label
+    Friend WithEvents Label1 As Label
 End Class
