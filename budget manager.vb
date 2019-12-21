@@ -2,6 +2,7 @@
 
     Dim items(999) As String
     Dim prices(999) As Double
+
     Private Sub btnadd_Click(sender As Object, e As EventArgs) Handles btnadd.Click
 
         Dim item As String = ""
@@ -10,12 +11,9 @@
         Dim totalexpense As Double
         Dim remaining As Double
 
-        Dim counter As Integer
-
         budget = txtbudget.Text
         item = InputBox("Please enter the name of the item or expense")
         price = InputBox("Please enter the price of " & item)
-
 
         If IsNumeric(budget) = True Then
             If IsNumeric(price) = True Then
@@ -52,9 +50,11 @@
 
     Private Sub btnsrt_Click(sender As Object, e As EventArgs) Handles btnsrt.Click
 
+        Dim counter As Integer
 
+        For counter = 0 To lstbxbudget.Items
 
-
+        Next
 
     End Sub
 End Class
