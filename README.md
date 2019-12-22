@@ -1,8 +1,12 @@
 # Financial-Toolkit
  A collection of resources to help with finance
 
-## Filepath for executable
-bin>debug>Financial Toolkit.exe
+## How to run
+- Clone and download the repository
+- Go to the following file path:
+    **repository > bin > debug**
+- Run the executable file:
+    *Financial Toolkit.exe*
 
 ## Features
 - interest calculator (simple and compund)
@@ -10,5 +14,6 @@ bin>debug>Financial Toolkit.exe
 - currency converter
 - Budgeting management
 
-## Contributors 
-- Jake Callcut
+### Contributors
+- Jake Callcut 
+*<jakecallcut123@gmail.com>*
