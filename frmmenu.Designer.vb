@@ -26,7 +26,7 @@ Partial Class frmmenu
         Me.btninterest = New System.Windows.Forms.Button()
         Me.btnquit = New System.Windows.Forms.Button()
         Me.btnmortgage = New System.Windows.Forms.Button()
-        Me.btncurr = New System.Windows.Forms.Button()
+        Me.btn = New System.Windows.Forms.Button()
         Me.btnbudgeting = New System.Windows.Forms.Button()
         Me.cmbcurr = New System.Windows.Forms.ComboBox()
         Me.lblcurr = New System.Windows.Forms.Label()
@@ -63,20 +63,19 @@ Partial Class frmmenu
         Me.btnmortgage.Text = "Mortgage Calculator"
         Me.btnmortgage.UseVisualStyleBackColor = True
         '
-        'btncurr
+        'btn
         '
-        Me.btncurr.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncurr.Location = New System.Drawing.Point(124, 277)
-        Me.btncurr.Name = "btncurr"
-        Me.btncurr.Size = New System.Drawing.Size(188, 101)
-        Me.btncurr.TabIndex = 4
-        Me.btncurr.Text = "Currency Converter"
-        Me.btncurr.UseVisualStyleBackColor = True
+        Me.btn.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn.Location = New System.Drawing.Point(124, 170)
+        Me.btn.Name = "btn"
+        Me.btn.Size = New System.Drawing.Size(188, 101)
+        Me.btn.TabIndex = 4
+        Me.btn.UseVisualStyleBackColor = True
         '
         'btnbudgeting
         '
         Me.btnbudgeting.Font = New System.Drawing.Font("Georgia", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbudgeting.Location = New System.Drawing.Point(124, 170)
+        Me.btnbudgeting.Location = New System.Drawing.Point(124, 277)
         Me.btnbudgeting.Name = "btnbudgeting"
         Me.btnbudgeting.Size = New System.Drawing.Size(188, 101)
         Me.btnbudgeting.TabIndex = 5
@@ -124,7 +123,7 @@ Partial Class frmmenu
         Me.Controls.Add(Me.lblcurr)
         Me.Controls.Add(Me.cmbcurr)
         Me.Controls.Add(Me.btnbudgeting)
-        Me.Controls.Add(Me.btncurr)
+        Me.Controls.Add(Me.btn)
         Me.Controls.Add(Me.btnmortgage)
         Me.Controls.Add(Me.btnquit)
         Me.Controls.Add(Me.btninterest)
@@ -139,7 +138,7 @@ Partial Class frmmenu
     Friend WithEvents btninterest As Button
     Friend WithEvents btnquit As Button
     Friend WithEvents btnmortgage As Button
-    Friend WithEvents btncurr As Button
+    Friend WithEvents btn As Button
     Friend WithEvents btnbudgeting As Button
     Friend WithEvents cmbcurr As ComboBox
     Friend WithEvents lblcurr As Label

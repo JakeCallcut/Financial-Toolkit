@@ -33,6 +33,7 @@ Partial Class budget_manager
         Me.lbltotal = New System.Windows.Forms.Label()
         Me.btnclr = New System.Windows.Forms.Button()
         Me.btnsrt = New System.Windows.Forms.Button()
+        Me.cmbxbudget = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'btnback
@@ -115,9 +116,9 @@ Partial Class budget_manager
         'btnclr
         '
         Me.btnclr.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclr.Location = New System.Drawing.Point(804, 359)
+        Me.btnclr.Location = New System.Drawing.Point(804, 15)
         Me.btnclr.Name = "btnclr"
-        Me.btnclr.Size = New System.Drawing.Size(103, 65)
+        Me.btnclr.Size = New System.Drawing.Size(157, 65)
         Me.btnclr.TabIndex = 8
         Me.btnclr.Text = "Clear"
         Me.btnclr.UseVisualStyleBackColor = True
@@ -125,18 +126,28 @@ Partial Class budget_manager
         'btnsrt
         '
         Me.btnsrt.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsrt.Location = New System.Drawing.Point(804, 288)
+        Me.btnsrt.Location = New System.Drawing.Point(804, 101)
         Me.btnsrt.Name = "btnsrt"
-        Me.btnsrt.Size = New System.Drawing.Size(103, 65)
+        Me.btnsrt.Size = New System.Drawing.Size(157, 65)
         Me.btnsrt.TabIndex = 9
         Me.btnsrt.Text = "Sort"
         Me.btnsrt.UseVisualStyleBackColor = True
+        '
+        'cmbxbudget
+        '
+        Me.cmbxbudget.FormattingEnabled = True
+        Me.cmbxbudget.Items.AddRange(New Object() {"Lowest First", "Highest First"})
+        Me.cmbxbudget.Location = New System.Drawing.Point(804, 172)
+        Me.cmbxbudget.Name = "cmbxbudget"
+        Me.cmbxbudget.Size = New System.Drawing.Size(157, 28)
+        Me.cmbxbudget.TabIndex = 10
         '
         'budget_manager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(931, 446)
+        Me.ClientSize = New System.Drawing.Size(973, 446)
+        Me.Controls.Add(Me.cmbxbudget)
         Me.Controls.Add(Me.btnsrt)
         Me.Controls.Add(Me.btnclr)
         Me.Controls.Add(Me.lbltotal)
@@ -165,4 +176,5 @@ Partial Class budget_manager
     Friend WithEvents lbltotal As Label
     Friend WithEvents btnclr As Button
     Friend WithEvents btnsrt As Button
+    Friend WithEvents cmbxbudget As ComboBox
 End Class

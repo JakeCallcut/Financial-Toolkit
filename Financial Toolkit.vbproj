@@ -80,12 +80,6 @@
     <Compile Include="budget manager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="currencyconverter.Designer.vb">
-      <DependentUpon>currencyconverter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="currencyconverter.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmmenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -124,9 +118,6 @@
   <ItemGroup>
     <EmbeddedResource Include="budget manager.resx">
       <DependentUpon>budget manager.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="currencyconverter.resx">
-      <DependentUpon>currencyconverter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmmenu.resx">
       <DependentUpon>frmmenu.vb</DependentUpon>

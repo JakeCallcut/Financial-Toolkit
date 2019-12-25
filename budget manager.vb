@@ -5,6 +5,8 @@
     Dim totalexpense As Double
     Dim remaining As Double
 
+    Dim counter As Integer
+
     Private Sub btnadd_Click(sender As Object, e As EventArgs) Handles btnadd.Click
 
         Dim item As String = ""
@@ -19,6 +21,9 @@
             If IsNumeric(price) = True Then
 
                 lstbxbudget.Items.Add(item & ", " & price)
+                items(counter) = item
+                prices(counter) = price
+                counter = counter + 1
 
                 totalexpense = totalexpense + price
                 lbltotal.Text = "Total Expenses: " & totalexpense
@@ -53,11 +58,30 @@
 
     Private Sub btnsrt_Click(sender As Object, e As EventArgs) Handles btnsrt.Click
 
-        'Dim counter As Integer
+        Dim i As Integer
+        Dim index As Integer = 0
 
-        'For counter = 0 To lstbxbudget.Items
+        'Dim spareint As Integer
 
-        'Next
+        ReDim Preserve items(counter)
+        ReDim Preserve prices(counter)
 
+        If cmbxbudget.SelectedIndex = 0 Then
+
+            Do Until prices(index) < prices(index + 1)
+
+            Loop
+
+        ElseIf cmbxbudget.SelectedIndex = 1 Then
+
+            Do Until 
+
+            Loop
+
+        End If
+
+        For i = 0 To counter
+            lstbxbudget.Items.Add(items(i) & ", " & prices(i))
+        Next
     End Sub
 End Class
