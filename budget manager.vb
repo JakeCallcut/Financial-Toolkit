@@ -74,9 +74,9 @@
 
         ElseIf cmbxbudget.SelectedIndex = 1 Then
 
-            Do Until 
+            ' Do Until 
 
-            Loop
+            'Loop
 
         End If
 
